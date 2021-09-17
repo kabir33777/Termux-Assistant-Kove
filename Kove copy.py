@@ -89,10 +89,6 @@ while True:
     else:
       subprocess.call(['termux-telephony-call','Calling',xx])
       subprocess.call(['termux-telephony-call',numberxx])
-  elif 'set note' in data:
-    subprocess.call(['termux-tts-speak','what you want to note'])
-    data = str(subprocess.getoutput('termux-speech-to-text')).lower()
-    print('Noted': + data)
     
     
       
